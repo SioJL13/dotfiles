@@ -1,0 +1,59 @@
+format = """
+$time\
+$username\
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$golang\
+$docker_context\
+$line_break\
+$character
+"""
+
+add_newline = false
+
+# Show time (optional)
+[time]
+disabled = false
+format = "[$time]($style) "
+
+# Show username (optional)
+[username]
+show_always = true
+style_user = "bold blue"
+style_root = "bold red"
+
+# Directory settings
+[directory]
+truncation_length = 3
+truncate_to_repo = false
+style = "bold cyan"
+
+# Git branch & status
+[git_branch]
+symbol = "🌱 "
+style = "bold purple"
+
+[git_status]
+style = "bold yellow"
+
+# Node.js version
+[nodejs]
+symbol = "⬢ "
+
+# Go version
+[golang]
+symbol = "🐹 "
+
+# Docker context
+[docker_context]
+symbol = "🐳 "
+
+# New line before input
+[line_break]
+
+# The character before you type
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
